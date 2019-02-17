@@ -13,23 +13,14 @@ public class Exercise11 {
 		printArray(array);
 	}
 	
-	private static void printArray(boolean[][] array) {
-		int rowsLength = array.length;
-		int columnsLength = array[0].length;
-		
-		for (int i = 0; i < rowsLength; i++) {
-			for (int j = 0; j < columnsLength; j++) {
-				
-				if (array[i][j]) {
-					StdOut.print("*");
-				} else {
-					StdOut.print(" ");
-				}
-				
-			}
-			StdOut.println();
+	public static void printArray(boolean[][] array)
+	{
+		for (int i = 0; i < array.length; i++)
+		{
+			for (int j = 0; j < array[i].length; j++)
+				System.out.print(array[i][j] ? "*" : " ");
+			System.out.println();
 		}
-		
 	}
 	
 }
