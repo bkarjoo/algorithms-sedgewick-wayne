@@ -1,4 +1,4 @@
 1.1.7
-a) 3.00009
+a) infinite loop because (9/t+1)/2.0 can't go lower than ~2.38
 b) 499500
 c) 10000
